@@ -94,7 +94,7 @@ public class LoginTest {
         String letter = warning.getText();
         
         try {
-        Assert.assertEquals(letter, "Warning: No match for E Address and/or Password.");
+        Assert.assertEquals(letter, "Warning: No match for E-Mail Address and/or Password.");
         System.out.println("The invalid login");
         logger.info("Invalid login");
         }
