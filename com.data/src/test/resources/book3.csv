@@ -1,0 +1,4 @@
+username,password,state
+admin,admin12,valid
+1234,admin12,invalid
+admin,2345,invalid
