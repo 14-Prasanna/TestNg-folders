@@ -42,7 +42,7 @@ public class Search {
 		WebElement product = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h4//a")));
 		String searched = product.getText();
 		
-		if(searched.equals(search1)) {
+		if(searched.contains(search1)) {
 		    System.out.println( search1 + "keyword is present: " + searched);
 		} else {
 		    System.out.println(search1 + "keyword is NOT present: " + searched);
