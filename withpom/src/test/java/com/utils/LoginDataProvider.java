@@ -12,13 +12,13 @@ import org.testng.annotations.DataProvider;
 
 public class LoginDataProvider {
 	
-	@DataProvider(name = "valid") 
+	@DataProvider(name = "valid", parallel = true) 
 	public Object[][] valid() throws IOException{
 		
 		return excelSheetRead("valid");
 	}
 	
-	@DataProvider(name = "invalid")
+	@DataProvider(name = "invalid", parallel = true)
 	public Object[][] invalid()  throws IOException{
 		
 		return excelSheetRead("invalid");
