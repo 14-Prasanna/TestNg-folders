@@ -1,0 +1,3 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","5","setUpClass","Suite","2026-05-07","broken","2026-05-07","com.runner.TestNGRunner","Test","com.runner.TestNGRunner","setUpClass"
+"","25759","Login with valid credentials","","2026-05-07","failed","2026-05-07","","Login with HRM Application","Login with valid credentials",""
