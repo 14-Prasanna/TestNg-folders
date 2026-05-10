@@ -15,7 +15,7 @@ public class LoginTest extends BaseTest {
         String result = loginPage.LoginValid(username, password);
 
         Assert.assertEquals(result, "blocks", "Valid login failed!");
-        System.out.println("User logged in successfully");
+        logger.info("User logged in successfully");
 
         
         loginPage.logout.click();
@@ -29,11 +29,11 @@ public class LoginTest extends BaseTest {
 
         if (result.equals("Wrong password.")) {
             Assert.assertEquals(result, "Wrong password.");
-            System.out.println("Invalid password is not accepted by the system");
+            logger.info("Invalid password is not accepted by the system");
         } 
         else if (result.equals("User does not exist.")) {
             Assert.assertEquals(result, "User does not exist.");
-            System.out.println("Invalid username is not accepted by the system");
+            logger.info("Invalid username is not accepted by the system");
         } 
         else {
             Assert.fail("Unexpected alert message: " + result);
